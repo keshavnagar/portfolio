@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        .without-flex {
+            display: block;
+        }
+
+        .without-flex img {
+            vertical-align: top;
+        }
+
+        .with-flex {
+           display: flex;
+           align-items: center;
+        }
+
+        .with-flex img{
+            vertical-align: top;
+        }
+
+        .with-flex img {
+            margin-right: 10px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Alignment Example</h1>
+
+    <div class="container without-flex">
+        <h2>Without Flexbox:</h2>
+        <img src="https://via.placeholder.com/50" alt="Placeholder">
+        <span>Text is not aligned properly with the image.</span>
+    </div>
+
+    <div class="container with-flex">
+        <h2>With Flexbox:</h2>
+        <img src="https://via.placeholder.com/50" alt="Placeholder">
+        <span>Image and text are alignedter.</span>
+    </div>
+</body>
+</html>
